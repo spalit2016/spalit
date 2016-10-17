@@ -1,0 +1,50 @@
+
+# Query1
+
+select state, sum(score) AS sum_score, avg(score) AS avg_score
+    FROM procedure
+    group by state
+    order by sum_score desc
+    LIMIT 10;
+
+# Result
+
+CA994058.0       95.29843735020611
+TX818570.0      90.76061647632775
+FL581200.0     93.51568785197104
+NY536806.0     96.80901713255184
+PA484458.0    92.03229483282675
+IL453551.0    91.53400605449042
+OH438978.0    90.67919851270399
+MI327556.0    90.16129920176164
+GA324745.0    91.37450759707372
+NC312727.0   92.74228944246738
+
+
+
+# These are top 10 largest states by total scores . California is at the top followed by Texas.
+
+
+#Query2
+
+select state, sum(score) AS sum_score, avg(score) AS avg_score
+    FROM procedure
+    group by state
+    order by avg_score desc
+    LIMIT 10;
+
+# Result
+
+DC27468.0100.98529411764706
+MD133706.0100.37987987987988
+DE23897.099.98744769874477
+NY536806.096.80901713255184
+NJ235969.096.39256535947712
+NV79984.096.01920768307323
+NH60866.095.55102040816327
+VI4582.095.45833333333333
+CA994058.095.29843735020611
+CT99913.095.15523809523809
+
+# These are the 10 largest states by average scores. DC tops with highest average quality care closely followed by MD.
+
