@@ -1,5 +1,5 @@
 
-Preparing the Environment needed for running the application
+Prepare the Environment needed for running the application
 
 1. Install psycopg
 
@@ -31,7 +31,7 @@ CREATE TABLE tweetwordcount
        count INT NOT NULL);
 
 
-Running the Application 
+Run the Application 
 
 5. Navigate to tweetwordcount folder.
 
@@ -54,11 +54,11 @@ i. Run following command with a word as an argument to return the Total No. of w
 Running the command without any argument will return all the words in the table and their total count
 of occurrences.
 
-python ./scripts/finalresults.py
+python finalresults.py
 
 ii. Run following command with 2 integers as arguments to return all the words from the table whose total number of occurrences in the table is between those two integers
 
-python ./scripts/histogram.py 10 100
+python histogram.py 10 100
 
 The above command will show all the words with counts between 10 and 100 , both inclusive.
 
