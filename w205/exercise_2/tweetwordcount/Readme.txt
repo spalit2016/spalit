@@ -1,5 +1,5 @@
 
-Prepare the Environment needed for running the application
+*** Prepare the Environment needed for running the application ***
 
 1. Install psycopg
 
@@ -31,7 +31,7 @@ CREATE TABLE tweetwordcount
        count INT NOT NULL);
 
 
-Run the Application 
+*** Run the Application ***
 
 5. Navigate to tweetwordcount folder.
 
@@ -45,7 +45,7 @@ Above command will run for 120 seconds. The duration of the application run can 
 The emitted words and word counts will be saved into the table “tweetwordcount" under the Database "Tcount”.
 
 
-Exploratory Data Analysis
+*** Perform Exploratory Data Analysis ***
 
 6. Exploratory Data Analysis can be done from the data saved in tweetwordcount table as follows:
 
